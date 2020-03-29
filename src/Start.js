@@ -31,7 +31,7 @@ export default class Start extends Component {
     const { name } = this.state;
     let self = this;
     await axios.post(
-      process.env.REACT_APP_API_URL,
+      process.env.REACT_APP_CREATE_TEAM_API_URL,
       { key1: `${name}` }
     ).then(function (response) {
       // handle success

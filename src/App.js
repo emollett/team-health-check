@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Home.js';
 import Start from './Start.js';
 import Team from './Team.js';
-// import NewHealthcheck from './NewHealthcheck.js';
+import NewHealthcheck from './NewHealthcheck.js';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/" render={(props) => <Home/>} />
         <Route exact path="/start" render={(props) => <Start/>} />
         <Route exact path="/team/:teamName" component={Team} />
-        {/* <Route exact path="/new-healthcheck" render={(props) => <NewHealthcheck/>} /> */}
+        <Route exact path="/new-healthcheck" render={(props) => <NewHealthcheck/>} />
       </div>
     </Router>
     </div>
